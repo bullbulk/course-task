@@ -1,0 +1,7 @@
+.Header-menu > div {
+    @apply flex h-8 w-36 text-center bg-gray text-blue text-sm;
+}
+
+.Header-menu > div > span {
+    @apply m-auto;
+}
