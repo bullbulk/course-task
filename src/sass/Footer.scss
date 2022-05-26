@@ -1,0 +1,26 @@
+.Footer {
+    @apply flex flex-col sm:flex-row bottom-auto bg-blue px-8 sm:px-24 py-6 static bottom-0 mt-auto text-white justify-between gap-8 sm:gap-4;
+
+    min-height: 30vh;
+
+    & .map {
+        @apply flex flex-row gap-4 items-start max-w-md;
+        & .col {
+            @apply flex flex-col gap-4 items-start min-w-fit;
+            & .row {
+                @apply flex flex-col gap-2;
+                & .title {
+                    @apply text-xl sm:text-2xl underline;
+                }
+            }
+        }
+    }
+}
+
+.Socials {
+    @apply flex flex-row justify-between gap-2;
+
+    & img {
+        @apply w-14 h-14;
+    }
+}

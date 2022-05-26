@@ -1,0 +1,15 @@
+.Header {
+    @apply flex flex-col sm:flex-row items-center sm:p-14 sm:h-24 sm:space-x-4 place-content-center;
+}
+
+.header-menu div {
+    @apply flex h-8 w-36 text-center bg-gray text-blue text-sm;
+
+    & span {
+        @apply m-auto;
+    }
+}
+
+.m-header-menu {
+    @apply sm:hidden flex bg-orange h-14 w-full justify-between items-center;
+}
