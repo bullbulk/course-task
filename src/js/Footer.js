@@ -1,10 +1,5 @@
 import '../sass/Footer.scss';
-import logo_full_dark from "../assets/logo_full_dark.svg";
 
-import vk from "../assets/icons/vk.svg";
-import twitter from "../assets/icons/twitter.svg";
-import telegram from "../assets/icons/telegram.svg";
-import youtube from "../assets/icons/youtube.svg";
 import {Link} from "react-router-dom";
 
 
@@ -13,7 +8,10 @@ function Footer() {
         <footer className="Footer">
             <div
                 className="flex flex-row flex-wrap sm:flex-col columns-2 sm:columns-auto gap-6 items-start text-sm max-w-sm">
-                <Link to="/"><img src={logo_full_dark} alt="logo_full_dark" className="h-20"/></Link>
+                <Link to="/">
+                    <img src="/assets/logo_full_dark.svg" alt="logo_full_dark"
+                         className="h-20"/>
+                </Link>
                 <div className="text-2xl -mt-6">+7 (912) 956-23-43</div>
                 <div>ООО «КАССЦЕНТР», ИНН 5-4920424, 1392, Москва, ул. Пушкина, д. 12, стр. 169, этаж 43</div>
                 <div>График работы: пн-пт 10:00-18:00. сб-вс: выходные</div>
@@ -66,10 +64,17 @@ function Footer() {
             <div className="max-w-md w-full"></div>
             <div className="flex flex-col min-w-fit max-w-full gap-4 items-center sm:items-stretch">
                 <div className="Socials">
-                    <a href="https://vk.com"><img src={vk} alt="Вконтакте"></img></a>
-                    <a href="https://twitter.com"><img src={twitter} alt="Twitter"></img></a>
-                    <a href="https://telegram.com"><img src={telegram} alt="Telegram"></img></a>
-                    <a href="https://youtube.com"><img src={youtube} alt="YouTube"></img></a>
+                    <a href="https://vk.com">
+                        <img src="/assets/icons/vk.svg"alt="Вконтакте"/>
+                    </a>
+                    <a href="https://twitter.com">
+                        <img src="/assets/icons/twitter.svg" alt="Twitter"/>
+                    </a>
+                    <a href="https://telegram.com">
+                        <img src="/assets/icons/telegram.svg" alt="Telegram"/></a>
+                    <a href="https://youtube.com">
+                        <img src="/assets/icons/youtube.svg" alt="YouTube"/>
+                    </a>
                 </div>
                 <div className="text-lblue">© 2001-2022 Компания КАССЦЕНТР</div>
             </div>

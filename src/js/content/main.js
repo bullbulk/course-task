@@ -1,22 +1,6 @@
-import banner_1 from "../../assets/banners/banner_1.svg";
-import news_1 from "../../assets/banners/news_1.svg";
-import news_2 from "../../assets/banners/news_2.svg";
-import news_3 from "../../assets/banners/news_3.svg";
-import logo from "../../assets/logo.svg";
-import adv_1 from "../../assets/advantages/advantage_1.svg";
-import adv_2 from "../../assets/advantages/advantage_2.svg";
-import adv_3 from "../../assets/advantages/advantage_3.svg";
-import adv_4 from "../../assets/advantages/advantage_4.svg";
-import cart from "../../assets/icons/cart.svg";
-import cup from "../../assets/icons/cup.svg";
-import ecommerce from "../../assets/icons/ecommerce.svg";
-import forklift from "../../assets/icons/forklift.svg";
-import web_store from "../../assets/raster/web_store.png";
-import cct from "../../assets/raster/cct.png";
-import pos from "../../assets/raster/pos.png";
-
 import "../../sass/Content.scss";
 import {Link} from "react-router-dom";
+
 
 // import {Swiper, SwiperSlide} from "swiper/react";
 //
@@ -34,6 +18,9 @@ import {Link} from "react-router-dom";
 //     {source: banner_4}
 // ];
 
+const banner_1 = <img src="/assets/banners/banner_1.svg" alt="banner_1"/>;
+
+
 function Main() {
     return (
         <section id="main">
@@ -46,22 +33,22 @@ function Main() {
                         {/*    <SwiperSlide>Slide 3</SwiperSlide>*/}
                         {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
                         {/*</Swiper>*/}
-                        <img src={banner_1} alt="banner_1"/>
+                        {banner_1}
                     </Link>
                     <div className="flex flex-col h-80 sm:h-auto w-full sm:w-2/5 justify-between"
                          height={banner_1.height}>
                         <div className="title">Не пропустите</div>
                         <Link to="/company/news">
                             <div className="news-row">E-commerce</div>
-                            <img src={news_1} alt="news_1"/>
+                            <img src="/assets/banners/news_1.svg" alt="news_1"/>
                         </Link>
                         <Link to="/company/news">
                             <div className="news-row">Услуги</div>
-                            <img src={news_2} alt="news_2"/>
+                            <img src="/assets/banners/news_2.svg" alt="news_2"/>
                         </Link>
                         <Link to="/company/news">
                             <div className="news-row">Новинки</div>
-                            <img src={news_3} alt="news_3"/>
+                            <img src="/assets/banners/news_3.svg" alt="news_3"/>
                         </Link>
                     </div>
                 </div>
@@ -86,13 +73,14 @@ function Main() {
                         которая
                         насчитывает свыше 2 000 партнеров и субпартнеров.
                     </div>
-                    <img className="hidden sm:block w-1/4" src={logo} alt="logo"/>
+                    <img className="hidden sm:block w-1/4" src="/assets/logo.svg" alt="logo"/>
                 </div>
 
                 <div id="advantages">
                     <div className="card">
                         <div className="flex flex-row gap-4">
-                            <img src={adv_1} className="w-24" alt="adv_1"/>
+                            <img src="/assets/advantages/advantage_1.svg"
+                                 className="w-24" alt="adv_1"/>
                             <div className="flex flex-col justify-between">
                                 <div className="t-large">20</div>
                                 <div className="t-small">лет</div>
@@ -102,7 +90,8 @@ function Main() {
                     </div>
                     <div className="card">
                         <div className="flex flex-row gap-4">
-                            <img src={adv_2} className="w-24" alt="adv_2"/>
+                            <img src="/assets/advantages/advantage_2.svg"
+                                 className="w-24" alt="adv_2"/>
                             <div className="flex flex-col justify-between">
                                 <div className="t-large">2000</div>
                                 <div className="t-small">партнеров</div>
@@ -112,7 +101,8 @@ function Main() {
                     </div>
                     <div className="card">
                         <div className="flex flex-row gap-4">
-                            <img src={adv_3} className="w-24" alt="adv_3"/>
+                            <img src="/assets/advantages/advantage_3.svg"
+                                 className="w-24" alt="adv_3"/>
                             <div className="flex flex-col justify-between">
                                 <div className="t-large">1,2</div>
                                 <div className="t-small">миллиона</div>
@@ -122,7 +112,8 @@ function Main() {
                     </div>
                     <div className="card">
                         <div className="flex flex-row gap-4">
-                            <img src={adv_4} className="w-24" alt="adv_4"/>
+                            <img src="/assets/advantages/advantage_4.svg"
+                                 className="w-24" alt="adv_4"/>
                             <div className="flex flex-col justify-between">
                                 <div className="t-large">800</div>
                                 <div className="t-small">сервис-центров</div>
@@ -146,19 +137,19 @@ function Main() {
                     </div>
                     <div className="flex gap-4 mt-6 -mx-4 sm:mx-0">
                         <div className="flex flex-col items-center gap-2 min-w-0 w-1/3">
-                            <img src={cart} alt="cart"/>
+                            <img src="/assets/icons/cart.svg" alt="cart"/>
                             <div className="text-xs font-bold">Retail</div>
                         </div>
                         <div className="flex flex-col items-center gap-2 min-w-0 w-1/3">
-                            <img src={cup} alt="cup"/>
+                            <img src="/assets/icons/cup.svg" alt="cup"/>
                             <div className="text-xs font-bold">HoReCa</div>
                         </div>
                         <div className="flex flex-col items-center gap-2 min-w-0 w-1/3">
-                            <img src={forklift} alt="forklift"/>
+                            <img src="/assets/icons/forklift.svg" alt="forklift"/>
                             <div className="text-xs font-bold">Склад</div>
                         </div>
                         <div className="flex flex-col items-center gap-2 min-w-0 w-1/3">
-                            <img src={ecommerce} alt="ecommerce"/>
+                            <img src="/assets/icons/ecommerce.svg" alt="ecommerce"/>
                             <div className="text-xs font-bold">E-Commerce</div>
                         </div>
                     </div>
@@ -183,27 +174,33 @@ function Main() {
 
             <div className="flex flex-col px-8 sm:px-36 mt-20 sm:mt-0 justify-center">
                 <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
-                    <div className="relative">
+                    <div className="relative hover-scale">
                         <Link to="/products">
-                            <img src={web_store} className="object-cover w-full" alt="web_store"/>
+                            <img src="/assets/raster/web_store.png"
+                                 className="object-cover w-full"
+                                 alt="web_store"/>
                             <div
                                 className="overflow-center w-72 font-bold text-white text-sm p-1 text-center bg-orange bg-opacity-70">
                                 Кассы для интернет-магазина
                             </div>
                         </Link>
                     </div>
-                    <div className="relative">
+                    <div className="relative hover-scale">
                         <Link to="/products">
-                            <img src={pos} className="object-cover w-full" alt="web_store"/>
+                            <img src="/assets/raster/pos.png"
+                                 className="object-cover w-full"
+                                 alt="pos"/>
                             <div
                                 className="overflow-center w-72 font-bold text-white text-sm p-1 text-center bg-orange bg-opacity-70">
                                 POS-системы
                             </div>
                         </Link>
                     </div>
-                    <div className="relative">
+                    <div className="relative hover-scale">
                         <Link to="/products">
-                            <img src={cct} className="object-cover w-full" alt="web_store"/>
+                            <img src="/assets/raster/cct.png"
+                                 className="object-cover w-full"
+                                 alt="cct"/>
                             <div
                                 className="overflow-center w-72 font-bold text-white text-sm p-1 text-center bg-orange bg-opacity-70">
                                 Контрольно-кассовая техника

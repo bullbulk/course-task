@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("../../public/assets/fonts/OpenSans.ttf");
+}
+
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -23,4 +28,8 @@ a {
 
 hr {
     @apply hidden sm:block mx-24 mb-6 border-gray;
+}
+
+.hover-scale {
+    @apply transform-gpu transition hover:scale-110;
 }

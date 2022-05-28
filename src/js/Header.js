@@ -1,15 +1,14 @@
 import '../sass/Header.scss';
 
-import logo_full from "../assets/logo_full.svg";
-import menu_icon from "../assets/icons/menu.svg";
-import cart_menu from "../assets/icons/cart_menu.svg";
 import {Link} from "react-router-dom";
 
 function Header() {
     return (
         <header className="mb-4 sm:mb-0">
             <div className="Header">
-                <Link to="/"><img src={logo_full} alt="logo_full" className="h-20"/></Link>
+                <Link to="/">
+                    <img src="/assets/logo_full.svg" alt="logo_full" className="h-20"/>
+                </Link>
                 <div className="header-menu hidden sm:flex flex-row items-center space-x-4">
                     <Link to="/products">
                         <div><span>Услуги</span></div>
@@ -25,8 +24,8 @@ function Header() {
                     </Link>
                 </div>
                 <div className="m-header-menu block h-24 px-8">
-                    <img className="h-8 w-8" src={menu_icon} alt="menu_icon"/>
-                    <img className="h-8 w-8" src={cart_menu} alt="cart_menu"/>
+                    <img className="h-8 w-8" src="/assets/icons/menu.svg" alt="menu_icon"/>
+                    <img className="h-8 w-8" src="/assets/icons/cart_menu.svg" alt="cart_menu"/>
                 </div>
                 <div className="hidden sm:flex">
                     <SearchBar/>

@@ -2,10 +2,6 @@
     @apply min-h-full max-w-full pb-16;
 }
 
-#about {
-    @apply flex flex-col align-middle px-8 sm:px-48 gap-4 sm:gap-12;
-}
-
 #banners {
     @apply mb-12;
 }
@@ -42,6 +38,10 @@
     }
 }
 
+#about {
+    @apply flex flex-col align-middle px-8 sm:px-48 gap-4 sm:gap-12;
+}
+
 button {
     @apply bg-orange rounded-lg py-2 px-4 text-white;
 }
@@ -50,4 +50,23 @@ button {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
 
-#products {}
+#products {
+    @apply flex gap-6 flex-col min-h-full max-w-full pb-16 px-8 sm:px-36;
+}
+
+.path {
+    @apply text-sm font-bold;
+}
+
+#product {
+    @apply flex gap-6 mb-16 flex-col min-h-full max-w-full px-8 sm:px-36;
+}
+
+.ch-title {
+    @apply rounded-none px-6 text-blue bg-gray shadow transform-gpu transition hover:scale-110;
+}
+
+.ch-title-active {
+    @extend .ch-title;
+    @apply bg-orange text-white;
+}
