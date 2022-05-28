@@ -1,5 +1,5 @@
 .Footer {
-    @apply flex flex-col sm:flex-row bottom-auto bg-blue px-8 sm:px-24 py-6 static bottom-0 mt-auto text-white justify-between gap-8 sm:gap-4;
+    @apply flex flex-col lg:flex-row bottom-auto bg-blue px-8 lg:px-24 py-6 static bottom-0 mt-auto text-white justify-between gap-8 lg:gap-4;
 
     min-height: 30vh;
 
@@ -10,7 +10,7 @@
             & .row {
                 @apply flex flex-col gap-2;
                 & .title {
-                    @apply text-xl sm:text-2xl underline;
+                    @apply text-xl lg:text-2xl underline;
                 }
             }
         }

@@ -18,25 +18,22 @@ import {Link} from "react-router-dom";
 //     {source: banner_4}
 // ];
 
-const banner_1 = <img src="/assets/banners/banner_1.svg" alt="banner_1"/>;
-
 
 function Main() {
     return (
         <section id="main">
-            <div id="banners" className="px-8 sm:px-12">
+            <div id="banners" className="px-8 lg:px-12">
                 <div className="flex flex-row min-h-12 justify-between gap-20">
-                    <Link to="/products" className="hidden sm:block sm:w-3/5">
+                    <Link to="/products" className="hidden lg:block lg:w-3/5">
                         {/*<Swiper navigation={true} modules={[Navigation]} className="mySwiper">*/}
                         {/*    <SwiperSlide>Slide 1</SwiperSlide>*/}
                         {/*    <SwiperSlide>Slide 2</SwiperSlide>*/}
                         {/*    <SwiperSlide>Slide 3</SwiperSlide>*/}
                         {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
                         {/*</Swiper>*/}
-                        {banner_1}
+                        <img src="/assets/banners/banner_1.svg" alt="banner_1"/>
                     </Link>
-                    <div className="flex flex-col h-80 sm:h-auto w-full sm:w-2/5 justify-between"
-                         height={banner_1.height}>
+                    <div className="flex flex-col w-full gap-4 lg:w-2/5 justify-between">
                         <div className="title">Не пропустите</div>
                         <Link to="/company/news">
                             <div className="news-row">E-commerce</div>
@@ -55,8 +52,8 @@ function Main() {
             </div>
 
             <div id="about">
-                <div className="title sm:px-12">О компании</div>
-                <div className="block sm:flex flex-row mb-4 sm:mb-0 gap-10 align-middle sm:px-12">
+                <div className="title lg:px-12">О компании</div>
+                <div className="block lg:flex flex-row mb-4 lg:mb-0 gap-10 align-middle lg:px-12">
                     <div className="text">
                         КАССЦЕНТР – IT-компания, ведущий российский производитель оборудования и
                         разработчик программного обеспечения для автоматизации таких сфер как ритейл, e-commerce,
@@ -73,12 +70,12 @@ function Main() {
                         которая
                         насчитывает свыше 2 000 партнеров и субпартнеров.
                     </div>
-                    <img className="hidden sm:block w-1/4" src="/assets/logo.svg" alt="logo"/>
+                    <img className="hidden lg:block w-1/4" src="/assets/logo.svg" alt="logo"/>
                 </div>
 
                 <div id="advantages">
                     <div className="card">
-                        <div className="flex flex-row gap-4">
+                        <div className="flex flex-row gap-4 w-fit">
                             <img src="/assets/advantages/advantage_1.svg"
                                  className="w-24" alt="adv_1"/>
                             <div className="flex flex-col justify-between">
@@ -86,10 +83,10 @@ function Main() {
                                 <div className="t-small">лет</div>
                             </div>
                         </div>
-                        <div>Опыта в разработке, оборудования и ПО</div>
+                        <div className="w-2/3">Опыта в разработке, оборудования и ПО</div>
                     </div>
                     <div className="card">
-                        <div className="flex flex-row gap-4">
+                        <div className="flex flex-row gap-4 w-fit">
                             <img src="/assets/advantages/advantage_2.svg"
                                  className="w-24" alt="adv_2"/>
                             <div className="flex flex-col justify-between">
@@ -97,10 +94,10 @@ function Main() {
                                 <div className="t-small">партнеров</div>
                             </div>
                         </div>
-                        <div>Прдеставленных во всех регионах страны</div>
+                        <div className="w-2/3">Представленных во всех регионах страны</div>
                     </div>
                     <div className="card">
-                        <div className="flex flex-row gap-4">
+                        <div className="flex flex-row gap-4 w-fit">
                             <img src="/assets/advantages/advantage_3.svg"
                                  className="w-24" alt="adv_3"/>
                             <div className="flex flex-col justify-between">
@@ -108,10 +105,10 @@ function Main() {
                                 <div className="t-small">миллиона</div>
                             </div>
                         </div>
-                        <div>Единиц контрольно-кассовой техники установлено</div>
+                        <div className="w-2/3">Единиц контрольно-кассовой техники установлено</div>
                     </div>
                     <div className="card">
-                        <div className="flex flex-row gap-4">
+                        <div className="flex flex-row gap-4 w-fit">
                             <img src="/assets/advantages/advantage_4.svg"
                                  className="w-24" alt="adv_4"/>
                             <div className="flex flex-col justify-between">
@@ -119,23 +116,23 @@ function Main() {
                                 <div className="t-small">сервис-центров</div>
                             </div>
                         </div>
-                        <div>В 230 городах России</div>
+                        <div className="w-2/3">В 230 городах России</div>
                     </div>
                 </div>
                 <Link to="/company/about" className="m-auto">
-                    <button className="w-fit mb-8 sm:mb-auto">Узнать о нас больше</button>
+                    <button className="w-fit mb-8 lg:mb-auto">Узнать о нас больше</button>
                 </Link>
             </div>
 
             <hr className="my-6"/>
 
-            <div className="flex flex-col sm:flex-row px-8 sm:px-60 gap-8 sm:gap-24">
+            <div className="flex flex-col lg:flex-row px-8 lg:px-60 gap-8 lg:gap-24">
                 <div className="flex flex-col basis-3/4 gap-2">
                     <div className="title">Сферы применения</div>
                     <div className="subtitle">Мы предостовляем оборудование и ПО для автоматизации различных сфер
                         бизнеса
                     </div>
-                    <div className="flex gap-4 mt-6 -mx-4 sm:mx-0">
+                    <div className="flex gap-4 mt-6 -mx-4 lg:mx-0">
                         <div className="flex flex-col items-center gap-2 min-w-0 w-1/3">
                             <img src="/assets/icons/cart.svg" alt="cart"/>
                             <div className="text-xs font-bold">Retail</div>
@@ -159,11 +156,11 @@ function Main() {
                     <div className="subtitle">Наше оборудование и программные продукты всегда соответствуют последним
                         изменениям законодательства
                     </div>
-                    <div className="flex flex-col justify-center text-blue pl-8 sm:pl-24 bg-gray h-24 gap-1">
+                    <div className="flex flex-col justify-center text-blue pl-8 lg:pl-24 bg-gray h-24 gap-1">
                         <div className="text-2xl font-bold">Маркировка</div>
                         <div className="text-sm">Как подобрать оборудование и соответствовать законам?</div>
                     </div>
-                    <div className="flex flex-col justify-center text-blue pl-8 sm:pl-24 bg-gray h-24 gap-1">
+                    <div className="flex flex-col justify-center text-blue pl-8 lg:pl-24 bg-gray h-24 gap-1">
                         <div className="text-2xl font-bold">54-ФЗ</div>
                         <div className="text-sm">Как выполнить новые требования 54-ФЗ?</div>
                     </div>
@@ -172,8 +169,8 @@ function Main() {
 
             <hr className="my-6"/>
 
-            <div className="flex flex-col px-8 sm:px-36 mt-20 sm:mt-0 justify-center">
-                <div className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-0">
+            <div className="flex flex-col px-8 lg:px-36 mt-20 lg:mt-0 justify-center">
+                <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0">
                     <div className="relative hover-scale">
                         <Link to="/products">
                             <img src="/assets/raster/web_store.png"
@@ -209,7 +206,7 @@ function Main() {
                     </div>
                 </div>
                 <Link to="/products" className="m-auto">
-                    <button className="w-fit mt-6 sm:mt-12">Перейти в каталог</button>
+                    <button className="w-fit mt-6 lg:mt-12">Перейти в каталог</button>
                 </Link>
             </div>
         </section>

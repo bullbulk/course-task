@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className="Footer">
             <div
-                className="flex flex-row flex-wrap sm:flex-col columns-2 sm:columns-auto gap-6 items-start text-sm max-w-sm">
+                className="flex flex-row flex-wrap lg:flex-col columns-2 lg:columns-auto gap-6 items-start text-sm max-w-sm">
                 <Link to="/">
                     <img src="/assets/logo_full_dark.svg" alt="logo_full_dark"
                          className="h-20"/>
@@ -62,7 +62,7 @@ function Footer() {
                 </div>
             </div>
             <div className="max-w-md w-full"></div>
-            <div className="flex flex-col min-w-fit max-w-full gap-4 items-center sm:items-stretch">
+            <div className="flex flex-col min-w-fit max-w-full gap-4 items-center lg:items-stretch">
                 <div className="Socials">
                     <a href="https://vk.com">
                         <img src="/assets/icons/vk.svg"alt="Вконтакте"/>

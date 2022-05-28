@@ -25,7 +25,7 @@ class ProductDescription extends React.Component {
     render() {
         return (
             <div className="flex flex-col gap-6">
-                <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+                <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
                     {chapters.map((value, index) => {
                         return (
                             <button

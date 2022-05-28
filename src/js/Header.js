@@ -4,12 +4,12 @@ import {Link} from "react-router-dom";
 
 function Header() {
     return (
-        <header className="mb-4 sm:mb-0">
+        <header className="mb-4 lg:mb-0">
             <div className="Header">
                 <Link to="/">
                     <img src="/assets/logo_full.svg" alt="logo_full" className="h-20"/>
                 </Link>
-                <div className="header-menu hidden sm:flex flex-row items-center space-x-4">
+                <div className="header-menu hidden lg:flex flex-row items-center space-x-4">
                     <Link to="/products">
                         <div><span>Услуги</span></div>
                     </Link>
@@ -27,12 +27,12 @@ function Header() {
                     <img className="h-8 w-8" src="/assets/icons/menu.svg" alt="menu_icon"/>
                     <img className="h-8 w-8" src="/assets/icons/cart_menu.svg" alt="cart_menu"/>
                 </div>
-                <div className="hidden sm:flex">
+                <div className="hidden lg:flex">
                     <SearchBar/>
                 </div>
             </div>
 
-            <hr className="sm:-mt-4 mt-4"/>
+            <hr className="lg:-mt-4 mt-4"/>
         </header>
     );
 }
@@ -40,7 +40,7 @@ function Header() {
 function SearchBar() {
     return (
         <div className="flex justify-center flex-row">
-            <div className="xl:w-full">
+            <div className="lg:w-full">
                 <div className="input-group flex flex-row items-stretch w-full rounded align-middle">
         <span
             className="input-group-text flex items-center px-3 py-1.5 text-base font-normal text-gray text-center whitespace-nowrap rounded">

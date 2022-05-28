@@ -23,7 +23,7 @@
 }
 
 #advantages {
-    @apply flex flex-col sm:flex-row gap-8 sm:gap-24 justify-center;
+    @apply flex flex-wrap xl:flex-nowrap gap-8 lg:gap-24 items-center xl:items-start xl:justify-center;
 
     & .t-large {
         @apply text-orange text-6xl font-bold
@@ -34,12 +34,12 @@
     }
 
     .card {
-        @apply flex flex-col gap-8 sm:w-1/4 text-blue;
+        @apply flex flex-col gap-8 min-w-max xl:min-w-0 max-w-fit xl:max-w-none xl:basis-1/4 text-blue;
     }
 }
 
 #about {
-    @apply flex flex-col align-middle px-8 sm:px-48 gap-4 sm:gap-12;
+    @apply flex flex-col align-middle px-8 lg:px-36 xl:px-48 gap-4 lg:gap-12;
 }
 
 button {
@@ -51,7 +51,7 @@ button {
 }
 
 #products {
-    @apply flex gap-6 flex-col min-h-full max-w-full pb-16 px-8 sm:px-36;
+    @apply flex gap-6 flex-col min-h-full max-w-full pb-16 px-8 lg:px-36;
 }
 
 .path {
@@ -59,7 +59,7 @@ button {
 }
 
 #product {
-    @apply flex gap-6 mb-16 flex-col min-h-full max-w-full px-8 sm:px-36;
+    @apply flex gap-6 mb-16 flex-col min-h-full max-w-full px-8 lg:px-36;
 }
 
 .ch-title {

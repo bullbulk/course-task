@@ -18,7 +18,9 @@ const recommended_prods = [
     {title: "КАССА Ф", img: "/assets/raster/product_8.png", price: "15 000 Р"},
     {title: "АТОЛ 11Ф", img: "/assets/raster/product_9.png", price: "23 500 Р"},
     {title: "Меркурий-185Ф", img: "/assets/raster/product_10.png", price: "7 500 Р"},
-];
+].map((value, index) =>
+    smProductCard(index, value.title, value.price, value.img)
+);
 
 
 function Product() {
@@ -56,10 +58,9 @@ function Product() {
                             <div className="flex columns-2 flex-wrap basis-1/2 w-full text-sm justify-between gap-2">
                                 {buy_options.map((value) => {
                                     return (
-                                        <div className="flex items-center gap-2 font-bold">
-                                            <input type="checkbox"/>
-                                            <div>{value}</div>
-                                        </div>
+                                        <label className="font-bold">
+                                            <input className="mr-2" type="checkbox"/>{value}
+                                        </label>
                                     )
                                 })}
                             </div>
@@ -67,9 +68,7 @@ function Product() {
                         </div>
                     </div>
                     <div className="hidden lg:flex justify-between w-full">
-                        {recommended_prods.map((value, index) =>
-                            smProductCard(index, value.title, value.price, value.img)
-                        )}
+                        {recommended_prods}
                     </div>
                 </div>
             </div>
@@ -77,9 +76,7 @@ function Product() {
                 <ProductDescription/>
             </div>
             <div className="flex lg:hidden gap-y-6 flex-wrap items-center justify-between w-full">
-                {recommended_prods.map((value, index) =>
-                    smProductCard(index, value.title, value.price, value.img)
-                )}
+                {recommended_prods}
             </div>
         </section>
     );
