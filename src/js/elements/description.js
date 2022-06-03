@@ -33,7 +33,7 @@ class ProductDescription extends React.Component {
                                 key={index}
                                 onClick={() => {
                                     this.setState(
-                                        {...this.state, chapter: chapters[index]}
+                                        {chapter: chapters[index]}
                                     );
                                 }}>
                                 {value.name}
