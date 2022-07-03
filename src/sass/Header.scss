@@ -2,13 +2,17 @@
     @apply flex flex-col lg:flex-row items-center lg:p-14 lg:h-24 lg:space-x-4 place-content-center;
 }
 
-.header-menu div {
-    @apply flex h-8 w-36 text-center bg-gray text-blue text-sm hover:text-white hover:bg-blue transition transform-gpu;
+.header-menu button {
+    @apply flex h-8 w-36 m-auto text-center bg-gray text-blue text-sm hover:text-white hover:bg-blue
+    transition transform-gpu rounded-none py-2 px-4;
+}
 
-    & span {
-        @apply m-auto;
+.dropdown {
+    &:hover .dropdown-menu {
+        @apply block;
     }
 }
+
 
 .m-header-menu {
     @apply lg:hidden flex bg-orange h-14 w-full justify-between items-center;

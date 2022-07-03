@@ -65,7 +65,7 @@ function Footer() {
             <div className="flex flex-col min-w-fit max-w-full gap-4 items-center lg:items-stretch">
                 <div className="Socials">
                     <a href="https://vk.com">
-                        <img src="/assets/icons/vk.svg"alt="Вконтакте"/>
+                        <img src="/assets/icons/vk.svg" alt="Вконтакте"/>
                     </a>
                     <a href="https://twitter.com">
                         <img src="/assets/icons/twitter.svg" alt="Twitter"/>

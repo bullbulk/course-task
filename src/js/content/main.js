@@ -1,5 +1,6 @@
 import "../../sass/Content.scss";
 import {Link} from "react-router-dom";
+import CustomCarousel from "../elements/carousel";
 
 
 // import {Swiper, SwiperSlide} from "swiper/react";
@@ -24,15 +25,9 @@ function Main() {
         <section id="main">
             <div id="banners" className="px-8 lg:px-12">
                 <div className="flex flex-row min-h-12 justify-between gap-20">
-                    <Link to="/products" className="hidden lg:block lg:w-3/5">
-                        {/*<Swiper navigation={true} modules={[Navigation]} className="mySwiper">*/}
-                        {/*    <SwiperSlide>Slide 1</SwiperSlide>*/}
-                        {/*    <SwiperSlide>Slide 2</SwiperSlide>*/}
-                        {/*    <SwiperSlide>Slide 3</SwiperSlide>*/}
-                        {/*    <SwiperSlide>Slide 4</SwiperSlide>*/}
-                        {/*</Swiper>*/}
-                        <img src="/assets/banners/banner_1.svg" alt="banner_1"/>
-                    </Link>
+                    <div className="hidden lg:block lg:w-3/5">
+                        <CustomCarousel/>
+                    </div>
                     <div className="flex flex-col w-full gap-4 lg:w-2/5 justify-between">
                         <div className="title">Не пропустите</div>
                         <Link to="/company/news">
@@ -52,8 +47,8 @@ function Main() {
             </div>
 
             <div id="about">
-                <div className="title lg:px-12">О компании</div>
-                <div className="block lg:flex flex-row mb-4 lg:mb-0 gap-10 align-middle lg:px-12">
+                <div className="title xl:px-12">О компании</div>
+                <div className="block lg:flex flex-row mb-4 lg:mb-0 gap-10 align-middle xl:px-12">
                     <div className="text">
                         КАССЦЕНТР – IT-компания, ведущий российский производитель оборудования и
                         разработчик программного обеспечения для автоматизации таких сфер как ритейл, e-commerce,
@@ -126,7 +121,7 @@ function Main() {
 
             <hr className="my-6"/>
 
-            <div className="flex flex-col lg:flex-row px-8 lg:px-60 gap-8 lg:gap-24">
+            <div className="flex flex-col lg:flex-row px-8 xl:px-60 lg:px-40 gap-8 lg:gap-24">
                 <div className="flex flex-col basis-3/4 gap-2">
                     <div className="title">Сферы применения</div>
                     <div className="subtitle">Мы предостовляем оборудование и ПО для автоматизации различных сфер

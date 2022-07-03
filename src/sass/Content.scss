@@ -23,7 +23,7 @@
 }
 
 #advantages {
-    @apply flex flex-wrap xl:flex-nowrap gap-8 lg:gap-24 items-center xl:items-start xl:justify-center;
+    @apply flex flex-wrap xl:flex-nowrap max-w-full gap-8 lg:gap-24 items-center xl:items-start xl:justify-center;
 
     & .t-large {
         @apply text-orange text-6xl font-bold
