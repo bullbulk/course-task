@@ -10,28 +10,28 @@ const images = [
             src: "/assets/banners/banner_1.svg",
             alt: "banner_1"
         },
-        link: "/products"
+        link: "/catalog/equipment"
     },
     {
         img: {
             src: "/assets/banners/banner_2.svg",
             alt: "banner_2"
         },
-        link: "/products"
+        link: "/catalog/equipment"
     },
     {
         img: {
             src: "/assets/banners/banner_3.svg",
             alt: "banner_3"
         },
-        link: "/products"
+        link: "/catalog/equipment"
     },
     {
         img: {
             src: "/assets/banners/banner_4.svg",
             alt: "banner_4"
         },
-        link: "/products"
+        link: "/catalog/equipment"
     },
 ];
 

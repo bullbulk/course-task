@@ -7,14 +7,14 @@ import SearchBar from "./elements/search_bar";
 const menuData = [
     {
         label: "Каталог",
-        link: "/products",
+        link: "/catalog",
         chapters: [
             {
                 label: "Оборудование",
-                link: "/products"
+                link: "/catalog/equipment"
             }, {
                 label: "Услуги",
-                link: "/products"
+                link: "/catalog/services"
             },
         ]
     }, {
@@ -23,19 +23,19 @@ const menuData = [
         chapters: [
             {
                 label: "Новости",
-                link: "/company"
+                link: "/company/news"
             }, {
                 label: "История",
-                link: "/company"
+                link: "/company/history"
             }, {
                 label: "Руководство",
-                link: "/company"
+                link: "/company/leads"
             }, {
                 label: "Достижения",
-                link: "/company"
+                link: "/company/achievements"
             }, {
                 label: "Документы",
-                link: "/company"
+                link: "/company/documents"
             },
         ]
     }, {
@@ -55,9 +55,6 @@ function Header() {
                     <img src="/assets/logo_full.svg" alt="logo_full" className="h-20"/>
                 </Link>
                 <div className="header-menu hidden lg:flex flex-row items-center space-x-4 z-50">
-                    {/*<Link to="/products">*/}
-                    {/*    <div><span>Услуги</span></div>*/}
-                    {/*</Link>*/}
                     {menuData.map((item, index) =>
                         <div key={index}>
                             {MenuButton(item.label, item.link, item.chapters)}
@@ -74,7 +71,7 @@ function Header() {
                 </div>
             </div>
 
-            <hr className="lg:-mt-4 mt-4"/>
+            <hr className="hidden lg:block mb-6 lg:-mt-4 mt-4"/>
         </header>
     );
 }

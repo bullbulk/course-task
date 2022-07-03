@@ -22,7 +22,7 @@ import CustomCarousel from "../elements/carousel";
 
 function Main() {
     return (
-        <section id="main">
+        <section>
             <div id="banners" className="px-8 lg:px-12">
                 <div className="flex flex-row min-h-12 justify-between gap-20">
                     <div className="hidden lg:block lg:w-3/5">
@@ -119,7 +119,7 @@ function Main() {
                 </Link>
             </div>
 
-            <hr className="my-6"/>
+            <hr/>
 
             <div className="flex flex-col lg:flex-row px-8 xl:px-60 lg:px-40 gap-8 lg:gap-24">
                 <div className="flex flex-col basis-3/4 gap-2">
@@ -162,12 +162,12 @@ function Main() {
                 </div>
             </div>
 
-            <hr className="my-6"/>
+            <hr/>
 
             <div className="flex flex-col px-8 lg:px-36 mt-20 lg:mt-0 justify-center">
                 <div className="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0">
                     <div className="relative hover-scale">
-                        <Link to="/products">
+                        <Link to="/catalog/equipment">
                             <img src="/assets/raster/web_store.png"
                                  className="object-cover w-full"
                                  alt="web_store"/>
@@ -178,7 +178,7 @@ function Main() {
                         </Link>
                     </div>
                     <div className="relative hover-scale">
-                        <Link to="/products">
+                        <Link to="/catalog/equipment">
                             <img src="/assets/raster/pos.png"
                                  className="object-cover w-full"
                                  alt="pos"/>
@@ -189,7 +189,7 @@ function Main() {
                         </Link>
                     </div>
                     <div className="relative hover-scale">
-                        <Link to="/products">
+                        <Link to="/catalog/equipment">
                             <img src="/assets/raster/cct.png"
                                  className="object-cover w-full"
                                  alt="cct"/>
@@ -200,7 +200,7 @@ function Main() {
                         </Link>
                     </div>
                 </div>
-                <Link to="/products" className="m-auto">
+                <Link to="/catalog" className="m-auto">
                     <button className="w-fit mt-6 lg:mt-12">Перейти в каталог</button>
                 </Link>
             </div>

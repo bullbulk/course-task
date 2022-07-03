@@ -4,7 +4,7 @@
 
 .header-menu button {
     @apply flex h-8 w-36 m-auto text-center bg-gray text-blue text-sm hover:text-white hover:bg-blue
-    transition transform-gpu rounded-none py-2 px-4;
+    transition transform-gpu py-2 px-4;
 }
 
 .dropdown {

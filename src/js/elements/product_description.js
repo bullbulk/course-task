@@ -4,7 +4,7 @@ import React from "react";
 const chapters = [
     {
         name: "Описание",
-        content: description(),
+        content: product_description(),
     },
     {
         name: "Характеристики",
@@ -48,7 +48,7 @@ class ProductDescription extends React.Component {
     }
 }
 
-function description() {
+function product_description() {
     return (
         <div className="flex flex-col gap-2">
             <p>

@@ -4,7 +4,7 @@ import {useLocation} from "react-router-dom";
 import {smProductCard} from "../elements/product_card";
 
 import items from "../const";
-import ProductDescription from "../elements/description";
+import ProductDescription from "../elements/product_description";
 
 
 const buy_options = [
@@ -56,9 +56,9 @@ function Product() {
                         <div
                             className="flex flex-col w-full lg:w-auto lg:basis-2/3 justify-between gap-4 px-16 lg:px-0 lg:gap-0 lg:py-6">
                             <div className="flex columns-2 flex-wrap basis-1/2 w-full text-sm justify-between gap-2">
-                                {buy_options.map((value) => {
+                                {buy_options.map((value, index) => {
                                     return (
-                                        <label className="font-bold">
+                                        <label className="font-bold" key={index}>
                                             <input className="mr-2" type="checkbox"/>{value}
                                         </label>
                                     )

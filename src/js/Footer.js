@@ -19,16 +19,20 @@ function Footer() {
             <div className="map">
                 <div className="col">
                     <div className="row">
-                        <Link to="/products">
+                        <Link to="/catalog">
                             <div className="title">Продукты</div>
                         </Link>
                         <div className="text-lblue text-sm">
-                            <div>Оборудование</div>
-                            <div>Программное обеспечение</div>
+                            <Link to="/catalog/equipment">
+                                <div>Оборудование</div>
+                            </Link>
+                            <Link to="/catalog/services">
+                                <div>Программное обеспечение</div>
+                            </Link>
                         </div>
                     </div>
                     <div className="row">
-                        <Link to="/products">
+                        <Link to="/catalog">
                             <div className="title">Услуги</div>
                         </Link>
                     </div>
@@ -37,9 +41,21 @@ function Footer() {
                             <div className="title">Компания</div>
                         </Link>
                         <div className="text-lblue text-sm">
-                            <div>История</div>
-                            <div>Новости</div>
-                            <div>Отзывы</div>
+                            <Link to="/company/news">
+                                <div>Новости</div>
+                            </Link>
+                            <Link to="/company/history">
+                                <div>История</div>
+                            </Link>
+                            <Link to="/company/leads">
+                                <div>Руководство</div>
+                            </Link>
+                            <Link to="/company/achievements">
+                                <div>Достижения</div>
+                            </Link>
+                            <Link to="/company/documents">
+                                <div>Документы</div>
+                            </Link>
                         </div>
                     </div>
                 </div>
