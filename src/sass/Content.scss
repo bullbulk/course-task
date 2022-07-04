@@ -89,7 +89,7 @@ button.flat {
 }
 
 .ch-title {
-    @apply rounded-none px-6 text-blue bg-gray shadow transform-gpu transition hover:scale-110;
+    @apply m-0 rounded-none px-6 text-blue bg-gray shadow transform-gpu transition hover:scale-110;
 }
 
 .ch-title-active {

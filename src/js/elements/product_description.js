@@ -27,7 +27,7 @@ class ProductDescription extends React.Component {
             <div className="flex flex-col gap-6">
                 <div className="flex flex-col sm:flex-row gap-4 lg:gap-8">
                     {chapters.map((value, index) => {
-                        return (
+			return (
                             <button
                                 className={value.name === this.state.chapter.name ? "ch-title-active" : "ch-title"}
                                 key={index}
